@@ -26,7 +26,6 @@ else:
     ft = Font(bold=True)    # Create bold font styler
 
     nm = nmap.PortScanner() # Create a new nmap scanner
-
     nm.scan(hosts=SUBNET, arguments='-sn')  # Performs a ping scan (-sn) for actice hosts
 
     recorder_data = [["IP", "MAC ADDRESS", "HARDWARE ID"]]
