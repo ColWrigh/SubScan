@@ -4,6 +4,8 @@ import nmap
 import os
 from nicegui import ui
 
+### FOR REFERENCE ONLY ###
+
 # Set up columns
 columns = [
     {'name': 'ip', 'label': 'IP ADDRESS', 'field': 'ip', 'required': True, 'align': 'left'},
