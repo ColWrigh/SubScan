@@ -34,11 +34,11 @@ else:
     for host in nm.all_hosts():
         ip = host
         mac = nm[host]['addresses'].get('mac', 'N/A')
-        hardware_id = requests.get(f"https://{ip}/licensing/products/hardwareid", verify = False)   #This may need to be moved to inside if statement
+        hardware_id = requests.get(f"https://{ip}/licensing/product/hardwareid", verify = False)   #This may need to be moved to inside if statement
 
 
         if not mac in IGNORE_LIST:
-            recorder_data.append([ip, mac, hardware_id])
+            recorder_data.append([ip, mac, hardware_id.text])
 
     for row in recorder_data:   # Add Recorder data to excel sheet
         ws.append(row)
