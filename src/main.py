@@ -27,7 +27,7 @@ else:
 
     nm = nmap.PortScanner() # Create a new nmap scanner
 
-    nm.scan(hosts=SUBNET, arguments='-sn')  # Performs a ping scan (-sn) for actice hosts
+    nm.scan(hosts=SUBNET, arguments='-sn')  # Performs a ping scan (-sn) for active hosts
 
     recorder_data = [["IP", "MAC ADDRESS", "HARDWARE ID"]]
 
