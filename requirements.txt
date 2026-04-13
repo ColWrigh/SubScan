@@ -1,2 +1,4 @@
+winapps
 requests
+openpyxl
 python-nmap
